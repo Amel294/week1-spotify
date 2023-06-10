@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="images\favicon32.b64ecc03.png" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div class="nav">
+      <div class="nav_items">
+        <div class="nav_items_logo">
+          <img src="images/Logo.svg" alt="logo" />
+        </div>
+        <div class="nav_items_section1">
+          <div class="nav_items_section1_item">
+            <div
+              class="nav_items_section1_item_logo nav_items_align_horizondal"
+              style="margin-top: 0px"
+            >
+              <div></div>
+              <img src="images/home.svg" alt="home" />
+              <span class="nav_items_section1_item_name" style="color: white"
+                >Home</span
+              >
+            </div>
+            <div
+              class="nav_items_section1_item_logo nav_items_align_horizondal hovertowhitesearch"
+            >
+              <span
+                class="nav_items_section1_item_name"
+                style="margin-left: 37px; background-image: none"
+                >Search</span
+              ><br />
+            </div>
+            <div
+              class="nav_items_section1_item_logo nav_items_align_horizondal hovertowhitelibrary"
+            >
+              <span
+                class="nav_items_section1_item_name"
+                style="margin-left: 37px; background-image: none"
+                >Your Library</span
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="nav_items_section2">
+          <div class="nav_items_section2_item">
+            <div
+              class="nav_items_section1_item_logo nav_items_align_horizondal hovertowhiteplaylist"
+            >
+              <span
+                class="nav_items_section1_item_name"
+                style="margin-left: 37px; background-image: none"
+                >Create Playlist</span
+              ><br />
+            </div>
+
+            <div
+              class="nav_items_section1_item_logo nav_items_align_horizondal hovertowhiteheart"
+            >
+              <span
+                class="nav_items_section1_item_name"
+                style="margin-left: 37px; background-image: none"
+                >Liked Songs</span
+              ><br />
+            </div>
+          </div>
+        </div>
+        <div class="nav_items_section3">
+          <div class="nav_items_section2_line">
+            <span>Legal</span>
+            <span>Privacy Center</span>
+          </div>
+          <br />
+          <div class="nav_items_section2_line">
+            <span>Privacy Policy</span>
+            <span>Cookies</span>
+          </div>
+          <br />
+          <div class="nav_items_section2_line">
+            <span>About Ads</span>
+            <span>Accessibility</span>
+          </div>
+          <button class="place">
+            <div class="place_sub globe_hov">
+              <div><img alt="globe" src="images\globe.svg" /></div>
+              <span style="margin-top: 2px">English</span>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <div class="topBar">
+        <div class="topBar_left">
+          <div class="topBar_left_item">
+            <button class="topBar_left_item_button">
+              <img
+                alt="arrowleft"
+                src="images/arrow left.svg"
+                style="opacity: 70%"
+              />
+            </button>
+          </div>
+          <div class="topBar_left_item" style="margin-left: 40px">
+            <button class="topBar_left_item_button">
+              <img
+                alt="arrowleft"
+                src="images/arrow right.svg "
+                style="opacity: 70%"
+              />
+            </button>
+          </div>
+        </div>
+
+        <div class="topBar_right">
+          <div class="topBar_right_item" id="signup">Sign up</div>
+          <div class="topBar_right_item">
+            <button class="topBar_right_item_button" id="login">Log in</button>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="content_sub" style="margin-top: 80px">
+          <div class="content_sub_items">
+            <div class="content_name">Focus</div>
+            <div class="showall" id="show">Show all</div>
+          </div>
+          <div class="song_section">
+            <div class="songbox">
+              <div class="songbox_sub" id="play">
+                <div class="albumcover">
+                  <div>
+                    <img class="albumpic" alt="song" src="images/sec1a1.png" />
+                  </div>
+
+                  <div class="playbutton">
+                    <img alt="play" src="images/play.svg" />
+                  </div>
+                </div>
+                <div class="description">
+                  <div class="songname">
+                    <div class="alignV">Peaceful Piano</div>
+                  </div>
+                  <div class="songdetails">
+                    <div class="alignV">
+                      Peaceful piano to help you slow down,…
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec1a2.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Deep Focus</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    Keep calm and focus with ambient and..
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec1a3.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Instrumental Study</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">Focus with soft study music in the…</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec1a4.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Focus Flow</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">Uptempo instrumental hip hop beats.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec1a5.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Workday Lounge</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    Lounge and chill out music for your work...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec1a6.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Beats to think to</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">Focus with deep techno and tech...</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec1a7.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Reading Adventure</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">Scores and soundtracks for..</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec1a8.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Relaxing Reading</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    Gentle instrumental music to help you...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_sub">
+          <div class="content_sub_items">
+            <div class="content_name" sty>Spotify Playlists</div>
+          </div>
+          <div class="song_section">
+            <div class="songbox">
+              <div class="songbox_sub" id="play">
+                <div class="albumcover">
+                  <div>
+                    <img class="albumpic" alt="song" src="images/sec2a1.png" />
+                  </div>
+
+                  <div class="playbutton">
+                    <img alt="play" src="images/play.svg" />
+                  </div>
+                </div>
+                <div class="description">
+                  <div class="songname">
+                    <div class="alignV">Today's Top Hits</div>
+                  </div>
+                  <div class="songdetails">
+                    <div class="alignV">
+                      Taylor Swift is on top of the Hottest 50!
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec2a2.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">RapCaviar</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">New music from Moneybagg Yo...</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec2a3.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">All Out 2010s</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">The biggest songs of the 2010s.</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec2a4.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Rock Classics</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    Rock legends & epic songs that continue...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec2a5.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Chill Hits</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    Kick back to the best new and recent chill…
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec2a6.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Viva Latino</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    Today's top Latin hits,elevando nuest...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec2a7.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Mega Hit Mix</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    A mega mix of 75 favorites from the la...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec2a8.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">All Out 80s</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">The biggest songs of the 1980s.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content_sub">
+          <div class="content_sub_items">
+            <div class="content_name" sty>Sound of India</div>
+          </div>
+          <div class="song_section">
+            <div class="songbox">
+              <div class="songbox_sub" id="play">
+                <div class="albumcover">
+                  <div>
+                    <img class="albumpic" alt="song" src="images/sec3a1.png" />
+                  </div>
+
+                  <div class="playbutton">
+                    <img alt="play" src="images/play.svg" />
+                  </div>
+                </div>
+                <div class="description">
+                  <div class="songname">
+                    <div class="alignV">Sound of Mumbai</div>
+                  </div>
+                  <div class="songdetails">
+                    <div class="alignV">
+                      The songs that define, unite and distinguis...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec3a2.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Sound of Kolkata</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    The songs that define, unite and distinguis...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec3a3.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Sound of Delhi</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    The songs that define, unite and distinguis...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec3a4.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Sound of Bengaluru</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    The songs that define, unite and distinguis...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec3a5.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Sound of Chennai</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    The songs that define, unite and distinguis...
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="songbox_sub" id="play">
+              <div class="albumcover">
+                <div>
+                  <img class="albumpic" alt="song" src="images/sec3a6.png" />
+                </div>
+
+                <div class="playbutton">
+                  <img alt="play" src="images/play.svg" />
+                </div>
+              </div>
+              <div class="description">
+                <div class="songname">
+                  <div class="alignV">Sound of Hydera...</div>
+                </div>
+                <div class="songdetails">
+                  <div class="alignV">
+                    The songs that define, unite and distingu...
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="footer_box">
+          <div class="footer_box_top">
+            <div class="footer_box_top_inner">
+              <div class="footer_box_top_inner_left">
+                <div class="footer_box_top_inner_section">
+                  <div
+                    class="footer_box_top_inner_item"
+                    style="font-weight: 700"
+                  >
+                    Company
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    About
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Jobs
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    For the Record
+                  </div>
+                </div>
+                <div class="footer_box_top_inner_section">
+                  <div
+                    class="footer_box_top_inner_item"
+                    style="font-weight: 700"
+                  >
+                    Communities
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    For Artists
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Developers
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Advertising
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Investors
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Vendors
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Spotify for Work
+                  </div>
+                </div>
+                <div class="footer_box_top_inner_section">
+                  <div
+                    class="footer_box_top_inner_item"
+                    style="font-weight: 700"
+                  >
+                    Useful links
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Support
+                  </div>
+                  <div class="footer_box_top_inner_item graycolor underline">
+                    Free Mobile App
+                  </div>
+                </div>
+              </div>
+
+              <div class="footer_box_top_inner_right">
+                <div class="sociallinks">
+                  <div class="instagram"></div>
+                  <div class="twitter"></div>
+
+                  <div class="facebook"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_box_bottem">
+            <hr />
+          </div>
+
+          <div class="footer_box_bottem">
+            <div class="copyright graycolor" style="font-size: 14px">
+              © 2023 Spotify AB
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom">
+      <div class="bottom_box">
+        <div
+          style="
+            text-transform: uppercase;
+            color: white;
+            font-size: 12px;
+            font-weight: 400;
+            font-family: Circular Std regular;
+            letter-spacing: 1.2px;
+          "
+        >
+          Preview of Spotify
+        </div>
+        <div
+          style="
+            font-size: 16px;
+            color: white;
+            font-family: Circular Std regular;
+            font-weight: 400;
+          "
+        >
+          Sign up to get unlimited songs and podcasts with occasional ads. No
+          credit card needed.
+        </div>
+      </div>
+      <div class="bottom_box_right">
+        <div class="bottom_box_right_align">
+          <button class="bottom_box_button">Sign up free</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
